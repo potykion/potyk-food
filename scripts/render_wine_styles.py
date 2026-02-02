@@ -259,7 +259,7 @@ def main(argv: list[str]) -> int:
     repo_root = _repo_root_from_this_file()
 
     p = argparse.ArgumentParser(
-        description="Render templates/wine.md from potyk-food.db (wine_styles) into wine_rendered.md"
+        description="Render templates/wine.md from potyk-food.db into docs/tasting/wine.md"
     )
     p.add_argument(
         "--db",
@@ -276,8 +276,8 @@ def main(argv: list[str]) -> int:
     p.add_argument(
         "--out",
         type=Path,
-        default=repo_root / "wine_rendered.md",
-        help="Output markdown path (default: repo_root/wine_rendered.md)",
+        default=repo_root / "docs" / "tasting" / "wine.md",
+        help="Output markdown path (default: repo_root/docs/tasting/wine.md)",
     )
     args = p.parse_args(argv)
 

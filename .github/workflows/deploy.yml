@@ -35,6 +35,9 @@ jobs:
         run: |
           pip install mkdocs-material
 
+      - name: Render wine page from DB
+        run: python scripts/render_wine_styles.py
+
       - name: Setup Pages
         uses: actions/configure-pages@v4
 
