@@ -1,6 +1,11 @@
 # Вино
 
 ## :de: [Spätburgunder aka German Pinot Noir](https://www.vivino.com/en/wine-styles/german-spatburgunder)
+## :es: [Spanish Toro Red](https://www.vivino.com/en/wine-styles/spanish-toro-red)
+## :fr: [Languedoc-Roussillon Red](https://www.vivino.com/en/wine-styles/languedoc-roussillon-red)
+## :us: [Californian Zinfandel](https://www.vivino.com/en/wine-styles/californian-zinfandel)
+
+## :de: [Spätburgunder aka German Pinot Noir](https://www.vivino.com/en/wine-styles/german-spatburgunder)
 
 | Бутылка                                                                                                            | Описание                                                                                                                                                                                                                                                                                                                |
 |--------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

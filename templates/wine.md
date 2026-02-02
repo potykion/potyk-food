@@ -1,10 +1,41 @@
 # Вино
 
+{% for style in styles %}
+## :{{ style.country_code }}: [{{ style.title }}]({{ style.vivino_url }})
+
+<table>
+
+    <thead>
+        <tr>
+            <th>Бутылка</th>
+            <th>Описание</th>
+        </tr>
+    </thead>
+
+    <tbody>
+
+        {% for wine in style_wines[style.id] %}
+            <tr>
+                <td>
+                    <img src="{{ wine.img }}" alt="{{ wine.title }}" width="40" style="text-align: center">
+                </td>
+                <td>
+                    <a href="{{ wine.vivino_url }}"><b>{{ wine.producer }} • {{ wine.title }}</b></a> <br> {{ wine.review }}
+                </td>
+            </tr>
+        {% endfor %}
+    </tbody>
+
+
+</table>
+
+{% endfor %}
+
 ## :de: [Spätburgunder aka German Pinot Noir](https://www.vivino.com/en/wine-styles/german-spatburgunder)
 
 | Бутылка                                                                                                            | Описание                                                                                                                                                                                                                                                                                                                |
 |--------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| ![f7c378af0d066bb64bbb0747db46.png](img/f7c378af0d066bb64bbb0747db46.png){ width=40 } {style="text-align: center"} | **[United Winemakers of Germany • Fernweh Spätburgunder 2023](https://www.vivino.com/en/united-winemakers-of-germany-fernweh-spatburgunder/w/12746112?year=2023)**<br/>Ооо скотинкой пахнет, кожа, все дела Да и по вкусу сейм Будто ламбик, но не так кисло, хотя по терпкости-горечи мощно, в чифир, в лимонную цедру |
+|  | **[United Winemakers of Germany • Fernweh Spätburgunder 2023](https://www.vivino.com/en/united-winemakers-of-germany-fernweh-spatburgunder/w/12746112?year=2023)**<br/>Ооо скотинкой пахнет, кожа, все дела Да и по вкусу сейм Будто ламбик, но не так кисло, хотя по терпкости-горечи мощно, в чифир, в лимонную цедру |
 | ![08e9eeff668767b0aef2825e265a.png](img/08e9eeff668767b0aef2825e265a.png){ width=40 } {style="text-align: center"} | **[21 Wine Street Pinot Noir Trocken](https://www.vivino.com/en/twentyone-wine-street-pinot-noir-trocken-rheinhessen-red-wine-v-n6m6z/w/12130790)               **<br/>И снова ягодный взрыв, больше сладости в аромате, прям в ягодное варенье, в мед Во вкусе заметно кисленько, крепковато, с дубовыми нотками       |
 
 
