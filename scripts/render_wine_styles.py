@@ -48,6 +48,42 @@ class WineWine:
         }
 
 
+@dataclass(frozen=True)
+class BeerStyle:
+    id: int
+    title: str
+    country_code: str
+
+    def as_template_obj(self) -> dict[str, Any]:
+        return {
+            "id": self.id,
+            "title": self.title,
+            "country_code": self.country_code,
+        }
+
+
+@dataclass(frozen=True)
+class BeerBeer:
+    id: int
+    title: str
+    brewery: str
+    style_id: int
+    review: str
+    img: str
+    untappd_url: str
+
+    def as_template_obj(self) -> dict[str, Any]:
+        return {
+            "id": self.id,
+            "title": self.title,
+            "brewery": self.brewery,
+            "style_id": self.style_id,
+            "review": self.review,
+            "img": self.img,
+            "untappd_url": self.untappd_url,
+        }
+
+
 def _repo_root_from_this_file() -> Path:
     # scripts/render_wine_styles.py -> repo root
     return Path(__file__).resolve().parents[1]
@@ -119,6 +155,76 @@ def read_wines_by_style_id(db_path: Path) -> dict[int, list[WineWine]]:
                 img=(r["img"] or "").strip(),
                 review=(r["review"] or "").strip(),
                 vivino_url=(r["vivino_url"] or "").strip(),
+            )
+        )
+    return dict(grouped)
+
+
+def read_beer_styles(db_path: Path) -> list[BeerStyle]:
+    if not db_path.exists():
+        raise FileNotFoundError(f"DB file not found: {db_path}")
+
+    con = sqlite3.connect(str(db_path))
+    try:
+        con.row_factory = sqlite3.Row
+        cur = con.cursor()
+        cur.execute(
+            """
+            SELECT id, title, country_code
+            FROM beer_styles
+            ORDER BY country_code, title, id
+            """
+        )
+        rows = cur.fetchall()
+    finally:
+        con.close()
+
+    styles: list[BeerStyle] = []
+    for r in rows:
+        styles.append(
+            BeerStyle(
+                id=int(r["id"]),
+                title=(r["title"] or "").strip(),
+                country_code=(r["country_code"] or "").strip(),
+            )
+        )
+    return styles
+
+
+def read_beers_by_style_id(db_path: Path) -> dict[int, list[BeerBeer]]:
+    if not db_path.exists():
+        raise FileNotFoundError(f"DB file not found: {db_path}")
+
+    con = sqlite3.connect(str(db_path))
+    try:
+        con.row_factory = sqlite3.Row
+        cur = con.cursor()
+        cur.execute(
+            """
+            SELECT id, title, brewery, style_id, review, img, untappd_url
+            FROM beer_beers
+            ORDER BY style_id, id
+            """
+        )
+        rows = cur.fetchall()
+    finally:
+        con.close()
+
+    grouped: dict[int, list[BeerBeer]] = defaultdict(list)
+    for r in rows:
+        style_id_val = r["style_id"]
+        if style_id_val is None:
+            # Skip unassigned beers; template groups by style_id.
+            continue
+        grouped[int(style_id_val)].append(
+            BeerBeer(
+                id=int(r["id"]),
+                title=(r["title"] or "").strip(),
+                brewery=(r["brewery"] or "").strip(),
+                style_id=int(style_id_val),
+                review=(r["review"] or "").strip(),
+                img=(r["img"] or "").strip(),
+                untappd_url=(r["untappd_url"] or "").strip(),
             )
         )
     return dict(grouped)
@@ -243,6 +349,85 @@ def render_minimal_fallback(
     return f"{pre}{''.join(rendered_styles)}{outer_post}"
 
 
+def render_beer_with_jinja2(
+    template_text: str,
+    styles: Iterable[BeerStyle],
+    style_beers: dict[int, list[BeerBeer]],
+) -> str:
+    try:
+        from jinja2 import BaseLoader, Environment  # type: ignore
+    except Exception as e:  # pragma: no cover
+        raise RuntimeError("jinja2 is not available") from e
+
+    env = Environment(
+        loader=BaseLoader(),
+        autoescape=False,  # markdown
+        trim_blocks=True,
+        lstrip_blocks=True,
+        keep_trailing_newline=True,
+    )
+    tpl = env.from_string(template_text)
+    return tpl.render(
+        styles=[s.as_template_obj() for s in styles],
+        style_beers={
+            int(k): [b.as_template_obj() for b in v] for k, v in style_beers.items()
+        },
+    )
+
+
+def render_beer_minimal_fallback(
+    template_text: str,
+    styles: Iterable[BeerStyle],
+    style_beers: dict[int, list[BeerBeer]],
+) -> str:
+    """
+    Minimal renderer supporting ONLY the patterns used in templates/beer.md:
+      {% for style in styles %} ... {% for beer in style_beers[style.id] %} ... {% endfor %} ... {% endfor %}
+    """
+    outer_start = "{% for style in styles %}"
+    inner_start = "{% for beer in style_beers[style.id] %}"
+
+    # Split into: before outer, outer body, after outer.
+    outer_pre_text, outer_body, outer_post = _extract_for_block(template_text, outer_start)
+
+    # outer_pre_text currently includes the outer_start tag; remove it.
+    pre = outer_pre_text.split(outer_start, 1)[0]
+
+    def subst_style(text: str, style: BeerStyle) -> str:
+        out = text
+        out = out.replace("{{ style.id }}", str(style.id))
+        out = out.replace("{{ style.title }}", style.title)
+        out = out.replace("{{ style.country_code }}", style.country_code)
+        return out
+
+    def subst_beer(text: str, beer: BeerBeer) -> str:
+        out = text
+        out = out.replace("{{ beer.id }}", str(beer.id))
+        out = out.replace("{{ beer.title }}", beer.title)
+        out = out.replace("{{ beer.brewery }}", beer.brewery)
+        out = out.replace("{{ beer.style_id }}", str(beer.style_id))
+        out = out.replace("{{ beer.review }}", beer.review)
+        out = out.replace("{{ beer.img }}", beer.img)
+        out = out.replace("{{ beer.untappd_url }}", beer.untappd_url)
+        return out
+
+    rendered_styles: list[str] = []
+    for style in styles:
+        body_for_style = subst_style(outer_body, style)
+
+        # Render inner beers loop if present.
+        if inner_start in body_for_style:
+            inner_pre_text, inner_body, inner_post = _extract_for_block(body_for_style, inner_start)
+            before_inner = inner_pre_text.split(inner_start, 1)[0]
+            beers = style_beers.get(style.id, [])
+            rendered_inner = "".join(subst_beer(inner_body, b) for b in beers)
+            body_for_style = f"{before_inner}{rendered_inner}{inner_post}"
+
+        rendered_styles.append(body_for_style)
+
+    return f"{pre}{''.join(rendered_styles)}{outer_post}"
+
+
 def render_template(
     template_path: Path,
     styles: list[WineStyle],
@@ -255,11 +440,23 @@ def render_template(
         return render_minimal_fallback(template_text, styles, style_wines)
 
 
+def render_beer_template(
+    template_path: Path,
+    styles: list[BeerStyle],
+    style_beers: dict[int, list[BeerBeer]],
+) -> str:
+    template_text = template_path.read_text(encoding="utf-8")
+    try:
+        return render_beer_with_jinja2(template_text, styles, style_beers)
+    except Exception:
+        return render_beer_minimal_fallback(template_text, styles, style_beers)
+
+
 def main(argv: list[str]) -> int:
     repo_root = _repo_root_from_this_file()
 
     p = argparse.ArgumentParser(
-        description="Render templates/wine.md from potyk-food.db into docs/tasting/wine.md"
+        description="Render templates/wine.md and templates/beer.md from potyk-food.db"
     )
     p.add_argument(
         "--db",
@@ -267,48 +464,61 @@ def main(argv: list[str]) -> int:
         default=repo_root / "potyk-food.db",
         help="Path to SQLite DB (default: repo_root/potyk-food.db)",
     )
-    p.add_argument(
-        "--template",
-        type=Path,
-        default=repo_root / "templates" / "wine.md",
-        help="Path to template markdown (default: repo_root/templates/wine.md)",
-    )
-    p.add_argument(
-        "--out",
-        type=Path,
-        default=repo_root / "docs" / "tasting" / "wine.md",
-        help="Output markdown path (default: repo_root/docs/tasting/wine.md)",
-    )
     args = p.parse_args(argv)
 
     db_path: Path = args.db
-    template_path: Path = args.template
-    out_path: Path = args.out
 
-    if not template_path.exists():
-        print(f"ERROR: template not found: {template_path}", file=sys.stderr)
-        return 2
+    # Define templates to render
+    templates = [
+        ("wine", repo_root / "templates" / "wine.md", repo_root / "docs" / "tasting" / "wine.md"),
+        ("beer", repo_root / "templates" / "beer.md", repo_root / "docs" / "tasting" / "beer.md"),
+    ]
 
+    # Read wine data
     try:
-        styles = read_wine_styles(db_path)
+        wine_styles = read_wine_styles(db_path)
         wines_by_style_id = read_wines_by_style_id(db_path)
-    except Exception as e:
-        print(f"ERROR: failed reading DB: {e}", file=sys.stderr)
-        return 2
-
-    try:
-        # Ensure missing style ids map to empty list (prevents template errors).
-        for s in styles:
+        for s in wine_styles:
             wines_by_style_id.setdefault(s.id, [])
-        rendered = render_template(template_path, styles, wines_by_style_id)
     except Exception as e:
-        print(f"ERROR: failed rendering template: {e}", file=sys.stderr)
+        print(f"ERROR: failed reading wine data from DB: {e}", file=sys.stderr)
         return 2
 
-    out_path.parent.mkdir(parents=True, exist_ok=True)
-    out_path.write_text(rendered, encoding="utf-8")
-    total_wines = sum(len(v) for v in wines_by_style_id.values())
-    print(f"Wrote {out_path} ({len(styles)} styles, {total_wines} wines)")
+    # Read beer data
+    try:
+        beer_styles = read_beer_styles(db_path)
+        beers_by_style_id = read_beers_by_style_id(db_path)
+        for s in beer_styles:
+            beers_by_style_id.setdefault(s.id, [])
+    except Exception as e:
+        print(f"ERROR: failed reading beer data from DB: {e}", file=sys.stderr)
+        return 2
+
+    # Render both templates
+    for template_type, template_path, out_path in templates:
+        if not template_path.exists():
+            print(f"WARNING: template not found: {template_path}, skipping", file=sys.stderr)
+            continue
+
+        try:
+            if template_type == "wine":
+                rendered = render_template(template_path, wine_styles, wines_by_style_id)
+                total_items = sum(len(v) for v in wines_by_style_id.values())
+                item_name = "wines"
+                styles_count = len(wine_styles)
+            else:  # beer
+                rendered = render_beer_template(template_path, beer_styles, beers_by_style_id)
+                total_items = sum(len(v) for v in beers_by_style_id.values())
+                item_name = "beers"
+                styles_count = len(beer_styles)
+
+            out_path.parent.mkdir(parents=True, exist_ok=True)
+            out_path.write_text(rendered, encoding="utf-8")
+            print(f"Wrote {out_path} ({styles_count} styles, {total_items} {item_name})")
+        except Exception as e:
+            print(f"ERROR: failed rendering {template_type} template: {e}", file=sys.stderr)
+            return 2
+
     return 0
 
 

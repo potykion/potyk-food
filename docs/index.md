@@ -24,6 +24,7 @@
 
 - [Колбаски из индейки](recipes/sausage-turkey.md)
 
-## :wine_glass: Дегустации
+## Дегустации
 
-- [Вино](tasting/wine.md)
+- :wine_glass: [Вино](tasting/wine.md)
+- :beer: [Пиво](tasting/beer.md)

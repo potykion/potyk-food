@@ -27,7 +27,7 @@
             <img src="../{{ wine.img }}" alt="{{ wine.title }}" width="40" >
         </td>
         <td>
-            <a href="#{{ wine.id }}"><b>{{ wine.producer }} • {{ wine.title }}</b></a> <br> {{ wine.review }}
+            <a href="{{ wine.vivino_url }}"><b>{{ wine.producer }} • {{ wine.title }}</b></a> <br> {{ wine.review }}
         </td>
     </tr>
 {% endfor %}
