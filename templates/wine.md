@@ -1,5 +1,13 @@
 # Вино
 
+<div style="display: flex; flex-wrap: wrap; gap: 5px; margin-bottom: 20px;">
+{% for style in styles %}
+{% for wine in style_wines[style.id] %}
+    <img src="../{{ wine.img }}" alt="{{ wine.title }}" width="40" >
+{% endfor %}
+{% endfor %}
+</div>
+
 {% for style in styles %}
 ## :{{ style.country_code }}: [{{ style.title }}]({{ style.vivino_url }})
 

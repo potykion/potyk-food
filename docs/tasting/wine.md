@@ -1,5 +1,13 @@
 # Вино
 
+<div style="display: flex; flex-wrap: wrap; gap: 5px; margin-bottom: 20px;">
+    <img src="../img/f7c378af0d066bb64bbb0747db46.png" alt="Fernweh Spätburgunder 2023" width="40" >
+    <img src="../img/08e9eeff668767b0aef2825e265a.png" alt="21 Wine Street Pinot Noir Trocken" width="40" >
+    <img src="../img/c762700676f82a638fe57dc366bc.png" alt="El Picaro" width="40" >
+    <img src="../img/UA0UaU5ERYq2RI_gsdk0Dw_pb_x600.png" alt="Le Soliste Têtu Pinot Noir" width="40" >
+    <img src="../img/991dab897a77c78a5279cfxd2fdc.webp" alt="Zinfandel" width="40" >
+</div>
+
 ## :de: [Spätburgunder aka German Pinot Noir](https://www.vivino.com/en/wine-styles/german-spatburgunder)
 
 <table>
