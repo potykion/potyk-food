@@ -5,3 +5,4 @@
 ## Полезные ссылки
 
 - https://twemoji-cheatsheet.vercel.app
+- https://lukasgeiter.github.io/mkdocs-awesome-nav/
