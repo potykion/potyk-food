@@ -1,17 +1,29 @@
-# Welcome to MkDocs
+# `potyk-food`
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+## Рецепты
 
-## Commands
+### :cooking: Завтраки
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+- [Риет из тунца](recipes/tuna-riet.md)
 
-## Project layout
+### :cn: Китайская кухня
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+- [Мапо Тофу](https://www.youtube.com/watch?v=kxI7aaofR7w)
+
+### :kr: Корейская кухня
+
+- [Пульгоги](https://www.youtube.com/watch?v=YWzAEKK5QPI)
+- [Кимчи](https://www.youtube.com/watch?v=mvsUjHd0Na4)
+
+### :jar: Ферментация 
+
+- [Квашеная капуста](recipes/fermented-cabbage.md)
+- [Кимчи](https://www.youtube.com/watch?v=mvsUjHd0Na4)
+
+### :hot_dog: Колбасные изделия
+
+- [Колбаски из индейки](recipes/sausage-turkey.md)
+
+## :wine_glass: Дегустации
+
+- [Вино](tasting/wine.md)
