@@ -3,7 +3,7 @@
 <div style="display: flex; flex-wrap: wrap; gap: 5px; margin-bottom: 20px;">
 {% for style in styles %}
 {% for wine in style_wines[style.id] %}
-    <img src="../{{ wine.img }}" alt="{{ wine.title }}" width="40" >
+    <a href="#{{ wine.id }}" style="display: inline-flex; align-items: flex-end; justify-content: center; width: 40px;"><img src="../{{ wine.img }}" alt="{{ wine.title }}" ></a>
 {% endfor %}
 {% endfor %}
 </div>
@@ -22,12 +22,12 @@
 <tbody>
 
 {% for wine in style_wines[style.id] %}
-    <tr>
+    <tr id="{{ wine.id }}">
         <td style="text-align: center">
             <img src="../{{ wine.img }}" alt="{{ wine.title }}" width="40" >
         </td>
         <td>
-            <a href="{{ wine.vivino_url }}"><b>{{ wine.producer }} • {{ wine.title }}</b></a> <br> {{ wine.review }}
+            <a href="#{{ wine.id }}"><b>{{ wine.producer }} • {{ wine.title }}</b></a> <br> {{ wine.review }}
         </td>
     </tr>
 {% endfor %}
