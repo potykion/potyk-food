@@ -7,12 +7,21 @@ from __future__ import annotations
 
 import argparse
 import json
+import re
 import sys
 from pathlib import Path
+
+# "ПроСто кухня | Выпуск 224" -> 224
+EPISODE_NUMBER_RE = re.compile(r"Выпуск\s+(\d+)", re.IGNORECASE)
 
 
 def _repo_root_from_this_file() -> Path:
     return Path(__file__).resolve().parent.parent
+
+
+def _parse_episode_number(title: str) -> int:
+    m = EPISODE_NUMBER_RE.search(title)
+    return int(m.group(1)) if m else 0
 
 
 def load_episodes(json_path: Path) -> list[dict]:
@@ -20,6 +29,9 @@ def load_episodes(json_path: Path) -> list[dict]:
         data = json.load(f)
     if not isinstance(data, list):
         raise ValueError("JSON must be an array of episodes")
+    for ep in data:
+        ep["number"] = _parse_episode_number(ep.get("title", ""))
+    data.sort(key=lambda ep: ep["number"], reverse=True)
     return data
 
 
