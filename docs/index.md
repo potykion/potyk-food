@@ -5,6 +5,7 @@
 ### :cooking: Завтраки
 
 - [Риет из тунца](recipes/tuna-riet.md)
+- [Тост Креветки Саганаки](recipes/shrimp-saganaki.md)
 
 ### :cn: Китайская кухня
 
