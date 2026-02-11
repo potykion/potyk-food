@@ -461,8 +461,8 @@ def main(argv: list[str]) -> int:
     p.add_argument(
         "--db",
         type=Path,
-        default=repo_root / "potyk-food.db",
-        help="Path to SQLite DB (default: repo_root/potyk-food.db)",
+        default=repo_root / "data" / "potyk-food.db",
+        help="Path to SQLite DB (default: repo_root/data/potyk-food.db)",
     )
     args = p.parse_args(argv)
 
