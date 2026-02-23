@@ -8,6 +8,8 @@
 
 ```
 mkdocs serve --dirtyreload
+python scripts/render_prosto_kuhnya.py
+python scripts/render_wine_styles.py
 ```
 
 ## Полезные ссылки

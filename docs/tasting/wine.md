@@ -4,6 +4,7 @@
     <a href="#1" style="display: inline-flex; align-items: flex-end; justify-content: center; width: 40px;"><img src="../img/f7c378af0d066bb64bbb0747db46.png" alt="Fernweh Spätburgunder 2023" ></a>
     <a href="#2" style="display: inline-flex; align-items: flex-end; justify-content: center; width: 40px;"><img src="../img/08e9eeff668767b0aef2825e265a.png" alt="21 Wine Street Pinot Noir Trocken" ></a>
     <a href="#3" style="display: inline-flex; align-items: flex-end; justify-content: center; width: 40px;"><img src="../img/c762700676f82a638fe57dc366bc.png" alt="El Picaro" ></a>
+    <a href="#6" style="display: inline-flex; align-items: flex-end; justify-content: center; width: 40px;"><img src="../img/xB_QUSa_QY-gy5_BaMyf7w_pb_x960.png" alt="Cabernet Sauvignon (Reserva) 2023" ></a>
     <a href="#4" style="display: inline-flex; align-items: flex-end; justify-content: center; width: 40px;"><img src="../img/UA0UaU5ERYq2RI_gsdk0Dw_pb_x600.png" alt="Le Soliste Têtu Pinot Noir" ></a>
     <a href="#5" style="display: inline-flex; align-items: flex-end; justify-content: center; width: 40px;"><img src="../img/991dab897a77c78a5279cfxd2fdc.webp" alt="Zinfandel" ></a>
 </div>
@@ -57,6 +58,29 @@
         </td>
         <td>
             <a href="https://www.vivino.com/en/matsu-el-picaro/w/1169235?year=2024"><b>Matsu • El Picaro</b></a> <br> Цвет и аромат насыщенный, ягодный, в смородину По вкусу танинно, чуть подвязывает, в деревяшку, чуть лакокрасочного Однако по телу довольно легко С мясным рагу отлично
+        </td>
+    </tr>
+</tbody>
+</table>
+
+## :flag_cl: [Chilean Cabernet Sauvignon](https://www.vivino.com/en/wine-styles/chilean-cabernet-sauvignon)
+
+<table>
+<thead>
+    <tr>
+        <th>Бутылка</th>
+        <th>Описание</th>
+    </tr>
+</thead>
+
+<tbody>
+
+    <tr id="6">
+        <td style="text-align: center">
+            <img src="../img/xB_QUSa_QY-gy5_BaMyf7w_pb_x960.png" alt="Cabernet Sauvignon (Reserva) 2023" width="40" >
+        </td>
+        <td>
+            <a href="https://www.vivino.com/en/casillero-del-diablo-cabernet-sauvignon-reserva-central-valley/w/1135067?year=2023"><b>Casillero del Diablo • Cabernet Sauvignon (Reserva) 2023</b></a> <br> Тьма в бокале Темные ягоды в аромате Очень мягко, балансно, красивое сухое послевкусие Вино со вкусом вина 👍 Со временем есть небольшой металлический привкус, но терпимо
         </td>
     </tr>
 </tbody>
