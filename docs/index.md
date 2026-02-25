@@ -18,7 +18,7 @@
 
 ### :kr: Корейская кухня
 
-- [Пульгоги](https://www.youtube.com/watch?v=YWzAEKK5QPI)
+- [Пульгоги](recipes/bulgogi.md)
 - [Кимчи](https://www.youtube.com/watch?v=mvsUjHd0Na4)
 
 ### :jar: Ферментация 
