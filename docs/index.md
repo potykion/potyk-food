@@ -6,6 +6,7 @@
 
 - [Риет из тунца](recipes/tuna-riet.md)
 - [Тост Креветки Саганаки](recipes/shrimp-saganaki.md)
+- [Шакшука](recipes/shakshouka.md)
 
 ### :spaghetti: Паста
 
