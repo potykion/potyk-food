@@ -4,7 +4,7 @@
 
 ### :cooking: Завтраки
 
-- [Риет из тунца](recipes/tuna-riet.md)
+- [Риет из тунца ака Тунцовая намазка](recipes/tuna-riet.md)
 - [Тост Креветки Саганаки](recipes/shrimp-saganaki.md)
 - [Шакшука](recipes/shakshouka.md)
 
@@ -12,6 +12,10 @@
 
 - [Карбонара](recipes/pasta-carbonara.md)
 - [Паста с мясным рагу и шпинатом](recipes/pasta-ground-beef-spinach.md)
+
+### :shallow_pan_of_food: Основные блюда
+
+- [Сердечки по-строгоновски](recipes/heart-stroganoff.md)
 
 ### :cn: Китайская кухня
 
@@ -21,6 +25,10 @@
 
 - [Пульгоги](recipes/bulgogi.md)
 - [Кимчи](https://www.youtube.com/watch?v=mvsUjHd0Na4)
+
+### :wind_blowing_face: Аэрогрилль
+
+- [Куриные крылья в аэрогрилле](recipes/air-fryer-chicken.md)
 
 ### :jar: Ферментация 
 
