@@ -14,6 +14,7 @@ python scripts/render_wine_styles.py
 
 ## Полезные ссылки
 
-- https://twemoji-cheatsheet.vercel.app
-- https://squidfunk.github.io/mkdocs-material/reference/icons-emojis/?h=emo
+- Твимоджи
+  - https://twemoji-cheatsheet.vercel.app
+  - https://squidfunk.github.io/mkdocs-material/reference/icons-emojis/?h=emo
 - https://lukasgeiter.github.io/mkdocs-awesome-nav/
