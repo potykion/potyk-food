@@ -67,7 +67,7 @@ def main(argv: list[str]) -> int:
     p.add_argument(
         "--out",
         type=Path,
-        default=repo_root / "docs" / "prosto-kuhnya.md",
+        default=repo_root / "docs" / "recipes" / "prosto-kuhnya.md",
         help="Output path (default: repo_root/docs/prosto-kuhnya.md)",
     )
     args = p.parse_args(argv)
@@ -76,7 +76,7 @@ def main(argv: list[str]) -> int:
         print(f"ERROR: data file not found: {args.data}", file=sys.stderr)
         return 2
 
-    template_path = repo_root / "templates" / "prosto-kuhnya.md"
+    template_path = repo_root / "templates"  / "prosto-kuhnya.md"
     if not template_path.exists():
         print(f"ERROR: template not found: {template_path}", file=sys.stderr)
         return 2
