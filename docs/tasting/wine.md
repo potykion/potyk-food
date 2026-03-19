@@ -1,15 +1,45 @@
 # Вино
 
 <div style="display: flex; flex-wrap: wrap; gap: 5px; margin-bottom: 20px;">
+    <a href="#9" style="display: inline-flex; align-items: flex-end; justify-content: center; width: 40px;"><img src="../img/c8ad58f44952e06ced84a67c338711ef.png" alt="Vineyards Malbec" ></a>
     <a href="#1" style="display: inline-flex; align-items: flex-end; justify-content: center; width: 40px;"><img src="../img/f7c378af0d066bb64bbb0747db46.png" alt="Fernweh Spätburgunder 2023" ></a>
     <a href="#2" style="display: inline-flex; align-items: flex-end; justify-content: center; width: 40px;"><img src="../img/08e9eeff668767b0aef2825e265a.png" alt="21 Wine Street Pinot Noir Trocken" ></a>
     <a href="#3" style="display: inline-flex; align-items: flex-end; justify-content: center; width: 40px;"><img src="../img/c762700676f82a638fe57dc366bc.png" alt="El Picaro" ></a>
     <a href="#6" style="display: inline-flex; align-items: flex-end; justify-content: center; width: 40px;"><img src="../img/xB_QUSa_QY-gy5_BaMyf7w_pb_x960.png" alt="Cabernet Sauvignon (Reserva) 2023" ></a>
     <a href="#4" style="display: inline-flex; align-items: flex-end; justify-content: center; width: 40px;"><img src="../img/UA0UaU5ERYq2RI_gsdk0Dw_pb_x600.png" alt="Le Soliste Têtu Pinot Noir" ></a>
+    <a href="#8" style="display: inline-flex; align-items: flex-end; justify-content: center; width: 40px;"><img src="../img/117895-1725695343_source_trim.png" alt="Kisi Qvevri" ></a>
+    <a href="#7" style="display: inline-flex; align-items: flex-end; justify-content: center; width: 40px;"><img src="../img/0_0_695x600.webp" alt="Tsinandali" ></a>
     <a href="#5" style="display: inline-flex; align-items: flex-end; justify-content: center; width: 40px;"><img src="../img/991dab897a77c78a5279cfxd2fdc.webp" alt="Zinfandel" ></a>
 </div>
 
+## :ar: [Argentinian Mendoza Malbec Red](https://www.vivino.com/en/wine-styles/argentinian-mendoza-malbec-red)
+
+>
+
+<table>
+<thead>
+    <tr>
+        <th>Бутылка</th>
+        <th>Описание</th>
+    </tr>
+</thead>
+
+<tbody>
+
+    <tr id="9">
+        <td style="text-align: center">
+            <img src="../img/c8ad58f44952e06ced84a67c338711ef.png" alt="Vineyards Malbec" width="40" >
+        </td>
+        <td>
+            <a href="https://www.vivino.com/en/trapiche-vineyards-malbec/w/1514435"><b>Trapiche • Vineyards Malbec</b></a> <br> По-началу нотки скотного двора в ароме В основе пряный вишневый компотик, с лёгкой сливой на пв
+        </td>
+    </tr>
+</tbody>
+</table>
+
 ## :de: [Spätburgunder aka German Pinot Noir](https://www.vivino.com/en/wine-styles/german-spatburgunder)
+
+>
 
 <table>
 <thead>
@@ -42,6 +72,8 @@
 
 ## :es: [Spanish Toro Red](https://www.vivino.com/en/wine-styles/spanish-toro-red)
 
+>Испанский бленд вин на основе винограда Темпранильо
+
 <table>
 <thead>
     <tr>
@@ -64,6 +96,8 @@
 </table>
 
 ## :flag_cl: [Chilean Cabernet Sauvignon](https://www.vivino.com/en/wine-styles/chilean-cabernet-sauvignon)
+
+>
 
 <table>
 <thead>
@@ -88,6 +122,8 @@
 
 ## :fr: [Languedoc-Roussillon Red](https://www.vivino.com/en/wine-styles/languedoc-roussillon-red)
 
+>Бленд вин с юга Франции
+
 <table>
 <thead>
     <tr>
@@ -109,7 +145,59 @@
 </tbody>
 </table>
 
+## :ge: [Georgian Qvevri White](https://www.vivino.com/en/wine-styles/georgian-white)
+
+>Грузинское оранжевое вино, выдержанное в кувшинах кверви
+
+<table>
+<thead>
+    <tr>
+        <th>Бутылка</th>
+        <th>Описание</th>
+    </tr>
+</thead>
+
+<tbody>
+
+    <tr id="8">
+        <td style="text-align: center">
+            <img src="../img/117895-1725695343_source_trim.png" alt="Kisi Qvevri" width="40" >
+        </td>
+        <td>
+            <a href="https://www.vivino.com/en/dugladze-kisi-k-isi-qvevri-dry-amber/w/6318157"><b>Dugladze • Kisi Qvevri</b></a> <br> Ооо, а это что на запах, что на вкус напоминает крепкую медовуху, выдержанную в бочке, или айс сидр Прям, мёд, карамель
+        </td>
+    </tr>
+</tbody>
+</table>
+
+## :ge: [Georgian Rkatsiteli White](https://www.vivino.com/en/wine-styles/georgian-rkatsiteli-white)
+
+>Вино из винограда Ркацители - самого популярного в Грузии
+
+<table>
+<thead>
+    <tr>
+        <th>Бутылка</th>
+        <th>Описание</th>
+    </tr>
+</thead>
+
+<tbody>
+
+    <tr id="7">
+        <td style="text-align: center">
+            <img src="../img/0_0_695x600.webp" alt="Tsinandali" width="40" >
+        </td>
+        <td>
+            <a href="https://www.vivino.com/en/dugladze-tsinandali-dry-white-cinandali-t-et-ri-mshrali/w/1727828"><b>Dugladze • Tsinandali</b></a> <br> Яблочно-грушевая ароматика По вкусу лимонные/грейповые корки, а потом лёгкий компотик
+        </td>
+    </tr>
+</tbody>
+</table>
+
 ## :us: [Californian Zinfandel](https://www.vivino.com/en/wine-styles/californian-zinfandel)
+
+>
 
 <table>
 <thead>

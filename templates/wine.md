@@ -11,6 +11,8 @@
 {% for style in styles %}
 ## :{{ style.country_code }}: [{{ style.title }}]({{ style.vivino_url }})
 
+>{{ style.description }}
+
 <table>
 <thead>
     <tr>

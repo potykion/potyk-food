@@ -13,17 +13,10 @@ from typing import Any, Iterable
 class WineStyle:
     id: int
     title: str
+    description: str
     country_code: str
     vivino_url: str
 
-    def as_template_obj(self) -> dict[str, Any]:
-        # Jinja can access dict keys via dot notation as well.
-        return {
-            "id": self.id,
-            "title": self.title,
-            "country_code": self.country_code,
-            "vivino_url": self.vivino_url,
-        }
 
 
 @dataclass(frozen=True)
@@ -99,7 +92,7 @@ def read_wine_styles(db_path: Path) -> list[WineStyle]:
         cur = con.cursor()
         cur.execute(
             """
-            SELECT id, title, country_code, vivino_url
+            SELECT *
             FROM wine_styles
             ORDER BY country_code, title, id
             """
@@ -114,6 +107,7 @@ def read_wine_styles(db_path: Path) -> list[WineStyle]:
             WineStyle(
                 id=int(r["id"]),
                 title=(r["title"] or "").strip(),
+                description=(r["description"] or "").strip(),
                 country_code=(r["country_code"] or "").strip(),
                 vivino_url=(r["vivino_url"] or "").strip(),
             )
@@ -249,7 +243,7 @@ def render_with_jinja2(
     )
     tpl = env.from_string(template_text)
     return tpl.render(
-        styles=[s.as_template_obj() for s in styles],
+        styles=styles,
         style_wines={
             int(k): [w.as_template_obj() for w in v] for k, v in style_wines.items()
         },

@@ -5,7 +5,8 @@ site_dir: site
 
 theme:
   name: material
-
+  features:
+    - navigation.tabs
 markdown_extensions:
   - attr_list
   - md_in_html
