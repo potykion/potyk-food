@@ -12,7 +12,7 @@
 
 #### :egg: Яйца
 
-- [Гайд на яйца](recipes/guides/eggs.md)
+- [Гайд на яйца](./recipes/guides/eggs.md)
 - [Шакшука](recipes/shakshouka.md)
 - [Запеченная яичница с охотничьими колбасками и овощами](recipes/eggs-baked-w-sausage-and-veggies.md)
 
