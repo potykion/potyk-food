@@ -12,6 +12,7 @@
 
 #### :egg: Яйца
 
+- [Гайд на яйца](recipes/guides/eggs.md)
 - [Шакшука](recipes/shakshouka.md)
 - [Запеченная яичница с охотничьими колбасками и овощами](recipes/eggs-baked-w-sausage-and-veggies.md)
 
@@ -19,6 +20,8 @@
 ### :shallow_pan_of_food: Основные блюда
 
 - [Сердечки по-строгоновски](recipes/heart-stroganoff.md)
+- [Тефтели с овощами в одной сковороде](recipes/meatballs-w-veggies.md)
+- [Курица с рисом по-испански](recipes/chicken-w-rice-spain.md)
 
 #### :spaghetti: Паста
 
