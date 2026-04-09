@@ -16,7 +16,6 @@
 - [Шакшука](recipes/shakshouka.md)
 - [Запеченная яичница с охотничьими колбасками и овощами](recipes/eggs-baked-w-sausage-and-veggies.md)
 
-
 ### :shallow_pan_of_food: Основные блюда
 
 - [Сердечки по-строгоновски](recipes/heart-stroganoff.md)
@@ -34,6 +33,8 @@
 
 ### :earth_asia: Азия
 
+- [Соба с утиной грудкой и соусом терияки](recipes/duck-soba.md)
+
 #### :cn: Китайская кухня
 
 - [Мапо Тофу](https://www.youtube.com/watch?v=kxI7aaofR7w)
@@ -45,7 +46,7 @@
 
 ### :axe: Крафт
 
-#### :jar: Ферментация 
+#### :jar: Ферментация
 
 - [Квашеная капуста / Капуста по-гурьевски](recipes/fermented-cabbage.md)
 - [Кимчи](https://www.youtube.com/watch?v=mvsUjHd0Na4)
