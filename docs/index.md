@@ -16,7 +16,7 @@
 - [Шакшука](recipes/shakshouka.md)
 - [Запеченная яичница с охотничьими колбасками и овощами](recipes/eggs-baked-w-sausage-and-veggies.md)
 
-#### :pancake: Сырники / Блинбчики
+#### :pancakes: Сырники / Блинбчики
 
 - [Сырники](recipes/syrniki.md)
 - [Блины](recipes/blyni.md)
