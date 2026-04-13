@@ -16,11 +16,17 @@
 - [Шакшука](recipes/shakshouka.md)
 - [Запеченная яичница с охотничьими колбасками и овощами](recipes/eggs-baked-w-sausage-and-veggies.md)
 
+#### :pancake: Сырники / Блинбчики
+
+- [Сырники](recipes/syrniki.md)
+- [Блины](recipes/blyni.md)
+
 ### :shallow_pan_of_food: Основные блюда
 
 - [Сердечки по-строгоновски](recipes/heart-stroganoff.md)
 - [Тефтели с овощами в одной сковороде](recipes/meatballs-w-veggies.md)
 - [Курица с рисом по-испански](recipes/chicken-w-rice-spain.md)
+- [Кролик с розмарином и розовым перцем](recipes/rabbit.md)
 
 #### :spaghetti: Паста
 
