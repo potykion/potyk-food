@@ -6,6 +6,8 @@
     <a href="#2" style="display: inline-flex; align-items: flex-end; justify-content: center; width: 40px;"><img src="../img/08e9eeff668767b0aef2825e265a.png" alt="21 Wine Street Pinot Noir Trocken" ></a>
     <a href="#3" style="display: inline-flex; align-items: flex-end; justify-content: center; width: 40px;"><img src="../img/c762700676f82a638fe57dc366bc.png" alt="El Picaro" ></a>
     <a href="#6" style="display: inline-flex; align-items: flex-end; justify-content: center; width: 40px;"><img src="../img/xB_QUSa_QY-gy5_BaMyf7w_pb_x960.png" alt="Cabernet Sauvignon (Reserva) 2023" ></a>
+    <a href="#10" style="display: inline-flex; align-items: flex-end; justify-content: center; width: 40px;"><img src="../img/92a8a458a8d7a3edc69a42b3d06ee87b.webp" alt="Prosecco Brut" ></a>
+    <a href="#11" style="display: inline-flex; align-items: flex-end; justify-content: center; width: 40px;"><img src="../img/6a6af681aa85e0faa0456ca123cfe2b6.webp" alt="Семисам Резерв" ></a>
     <a href="#4" style="display: inline-flex; align-items: flex-end; justify-content: center; width: 40px;"><img src="../img/UA0UaU5ERYq2RI_gsdk0Dw_pb_x600.png" alt="Le Soliste Têtu Pinot Noir" ></a>
     <a href="#8" style="display: inline-flex; align-items: flex-end; justify-content: center; width: 40px;"><img src="../img/117895-1725695343_source_trim.png" alt="Kisi Qvevri" ></a>
     <a href="#7" style="display: inline-flex; align-items: flex-end; justify-content: center; width: 40px;"><img src="../img/0_0_695x600.webp" alt="Tsinandali" ></a>
@@ -115,6 +117,56 @@
         </td>
         <td>
             <a href="https://www.vivino.com/en/casillero-del-diablo-cabernet-sauvignon-reserva-central-valley/w/1135067?year=2023"><b>Casillero del Diablo • Cabernet Sauvignon (Reserva) 2023</b></a> <br> Тьма в бокале Темные ягоды в аромате Очень мягко, балансно, красивое сухое послевкусие Вино со вкусом вина 👍 Со временем есть небольшой металлический привкус, но терпимо
+        </td>
+    </tr>
+</tbody>
+</table>
+
+## :flag_it: [Italian Prosecco](https://www.vivino.com/en/wine-styles/italian-prosecco)
+
+>Итальянское игристое
+
+<table>
+<thead>
+    <tr>
+        <th>Бутылка</th>
+        <th>Описание</th>
+    </tr>
+</thead>
+
+<tbody>
+
+    <tr id="10">
+        <td style="text-align: center">
+            <img src="../img/92a8a458a8d7a3edc69a42b3d06ee87b.webp" alt="Prosecco Brut" width="40" >
+        </td>
+        <td>
+            <a href="https://www.vivino.com/en/bruni-prosecco-prosecco-brut-prosecco/w/13703528"><b>Bruni • Prosecco Brut</b></a> <br> Не бледное, бесконечный поток пузырьков Яблочки, дыня, крем-сода По вкусу в яблочные косточки Базовая база
+        </td>
+    </tr>
+</tbody>
+</table>
+
+## :flag_ru: [Russian Red](https://www.vivino.com/en/wine-styles/russian-red)
+
+>
+
+<table>
+<thead>
+    <tr>
+        <th>Бутылка</th>
+        <th>Описание</th>
+    </tr>
+</thead>
+
+<tbody>
+
+    <tr id="11">
+        <td style="text-align: center">
+            <img src="../img/6a6af681aa85e0faa0456ca123cfe2b6.webp" alt="Семисам Резерв" width="40" >
+        </td>
+        <td>
+            <a href="https://www.vivino.com/en/shumrinka-shumrinka-semisam-rezerv-semisam-reserve-red/w/11264124"><b>Шумринка • Семисам Резерв</b></a> <br> Цвета морса из черной смородины По аромату черная смородина, бочка, цветы аля люпины/сирень Спустя время появляется чернослив медок бочка листва По вкусу кисленько в красные ягоды, самую малость лакированного паркета, танины аккуратные Крепость присутствует Балансное
         </td>
     </tr>
 </tbody>
