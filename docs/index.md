@@ -7,8 +7,10 @@
 #### :bread: Хлеб
 
 - [Риет из тунца ака Тунцовая намазка](recipes/tuna-riet.md)
+- [Риет из горбуши](recipes/salmon-riet.md)
 - [Тост Креветки Саганаки](recipes/shrimp-saganaki.md)
 - [Круассан с индейкой, сыром камамбер и брусничным вареньем](recipes/croissant-camembert-turkey.md)
+- [Бутерброд с минтаем и авокадо](recipes/mintai-avocado-toast.md)
 
 #### :egg: Яйца
 
@@ -40,15 +42,20 @@
 ### :earth_asia: Азия
 
 - [Соба с утиной грудкой и соусом терияки](recipes/duck-soba.md)
+- [Стеклянная лапша с креветками](recipes/glass-noodles-shrimp.md)
 
 #### :cn: Китайская кухня
 
-- [Мапо Тофу](https://www.youtube.com/watch?v=kxI7aaofR7w)
+- [Мапо Тофу](recipes/mapo-tofu.md)
 
 #### :kr: Корейская кухня
 
 - [Пульгоги](recipes/bulgogi.md)
 - [Кимчи](https://www.youtube.com/watch?v=mvsUjHd0Na4)
+
+### :pie: Десерты
+
+- [Брауни с вишней](recipes/brownie.md)
 
 ### :axe: Крафт
 
