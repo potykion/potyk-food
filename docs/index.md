@@ -34,6 +34,7 @@
 
 - [Карбонара](recipes/pasta-carbonara.md)
 - [Паста с мясным рагу и шпинатом](recipes/pasta-ground-beef-spinach.md)
+- [Паста по-французски с кальмарами](recipes/pasta-squid.md)
 
 #### :wind_blowing_face: Аэрогрилль
 
