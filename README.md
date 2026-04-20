@@ -12,6 +12,14 @@ python scripts/render_prosto_kuhnya.py
 python scripts/render_wine_styles.py
 ```
 
+## Операции
+
+### Сжатие картинок
+
+```shell
+optimizt docs/recipes/img
+```
+
 ## Полезные ссылки
 
 - Твимоджи
