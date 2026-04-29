@@ -1,9 +1,12 @@
 # Запеченная яичница с охотничьими колбасками и овощами 
 
+- https://www.youtube.com/watch?v=g47CHEP_etE
 
-https://www.youtube.com/watch?v=g47CHEP_etE&list=PLRQwloIf-xS___2uysN73-5RSOeiDZeOS&index=3
+## 
 
-![img.png](img/img.png)
+![eggs-baked-w-sausage-and-veggies.png](../../_img/eggs-baked-w-sausage-and-veggies.png)
+
+## Приготовление
 
 0. Духовку на 180°
 1. Лук порей нарезаем кольцами, моем 

@@ -4,7 +4,7 @@
 
 ## Ингредиенты
 
-![shakshouka.jpg](img/shakshouka.jpg)
+![shakshouka.jpg](../../_img/shakshouka.jpg)
 
 | Name                           | Amount Unit |
 |--------------------------------|-------------|

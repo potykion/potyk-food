@@ -17,7 +17,7 @@ python scripts/render_wine_styles.py
 ### Сжатие картинок
 
 ```shell
-optimizt docs/recipes/img
+optimizt docs/recipes/_img
 ```
 
 ## Полезные ссылки

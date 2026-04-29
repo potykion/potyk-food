@@ -3,7 +3,7 @@
 - https://www.youtube.com/watch?v=9njsFWXTkqQ
 - https://vk.com/sashabelkovich?w=wall-39128795_61226
 
-![ПроСто кухня _ Выпуск 273 19-37 screenshot.png](img/%D0%9F%D1%80%D0%BE%D0%A1%D1%82%D0%BE%20%D0%BA%D1%83%D1%85%D0%BD%D1%8F%20_%20%D0%92%D1%8B%D0%BF%D1%83%D1%81%D0%BA%20273%2019-37%20screenshot.png)
+![meatballs-w-veggies.png](../_img/meatballs-w-veggies.png)
 
 ## Ингредиенты:
 
