@@ -24,53 +24,64 @@
 - [Сырники](recipes/01-breakfast/pancakes/syrniki.md)
 - [Блины](recipes/01-breakfast/pancakes/blyni.md)
 
+### :salad: Салаты
+
+- [Салат с сельдереем с яблоками](recipes/02-salad/celery-apples.md)
+- [Салат с уткой](recipes/02-salad/salad-duck.md)
+
+### :bowl_with_spoon: Супы
+
+- [Куриный суп](recipes/03-soup/chicken-soup.md)
+
 ### :shallow_pan_of_food: Основные блюда
 
-- [Сердечки по-строгоновски](recipes/03-main-course/heart-stroganoff.md)
-- [Тефтели с овощами в одной сковороде](recipes/03-main-course/meatballs-w-veggies.md)
-- [Курица с рисом по-испански](recipes/03-main-course/chicken-w-rice-spain.md)
-- [Куриные окорочка с овощами](recipes/03-main-course/glazed-chicken-w-veggies.md)
-- [Кролик с розмарином и розовым перцем](recipes/03-main-course/rabbit.md)
-- [Печень с яблоками по-берлински](recipes/03-main-course/liver-w-apples.md)
+- [Сердечки по-строгоновски](recipes/04-main-course/heart-stroganoff.md)
+- [Тефтели с овощами в одной сковороде](recipes/04-main-course/meatballs-w-veggies.md)
+- [Курица с рисом по-испански](recipes/04-main-course/chicken-w-rice-spain.md)
+- [Куриные окорочка с овощами](recipes/04-main-course/glazed-chicken-w-veggies.md)
+- [Кролик с розмарином и розовым перцем](recipes/04-main-course/rabbit.md)
+- [Печень с яблоками по-берлински](recipes/04-main-course/liver-w-apples.md)
+- [Свиные медальоны с яблочно-горчичным соусом](recipes/04-main-course/pork-w-apples.md)
 
 #### :spaghetti: Паста
 
-- [Карбонара](recipes/03-main-course/pasta/pasta-carbonara.md)
-- [Паста с мясным рагу и шпинатом](recipes/03-main-course/pasta/pasta-ground-beef-spinach.md)
-- [Паста по-французски с кальмарами](recipes/03-main-course/pasta/pasta-squid.md)
+- [Карбонара](recipes/04-main-course/pasta/pasta-carbonara.md)
+- [Паста с мясным рагу и шпинатом](recipes/04-main-course/pasta/pasta-ground-beef-spinach.md)
+- [Паста по-французски с кальмарами](recipes/04-main-course/pasta/pasta-squid.md)
 
 #### :wind_blowing_face: Аэрогриль
 
-- [Куриные крылья в аэрогрилле](recipes/03-main-course/air-fryer/air-fryer-chicken.md)
+- [Куриные крылья в аэрогрилле](recipes/04-main-course/air-fryer/air-fryer-chicken.md)
 
 ### :earth_asia: Азия
 
-- [Соба с утиной грудкой и соусом терияки](recipes/04-asia/duck-soba.md)
-- [Стеклянная лапша с креветками](recipes/04-asia/glass-noodles-shrimp.md)
+- [Соба с утиной грудкой и соусом терияки](recipes/05-asia/duck-soba.md)
+- [Стеклянная лапша с креветками](recipes/05-asia/glass-noodles-shrimp.md)
 
 #### :cn: Китайская кухня
 
-- [Мапо Тофу](recipes/04-asia/china/mapo-tofu.md)
+- [Курица в соевом соусе с рисом](recipes/05-asia/china/chicken-rice.md)
+- [Мапо Тофу](recipes/05-asia/china/mapo-tofu.md)
 
 #### :kr: Корейская кухня
 
-- [Пульгоги](recipes/04-asia/korea/bulgogi.md)
+- [Пульгоги](recipes/05-asia/korea/bulgogi.md)
 - [Кимчи](https://www.youtube.com/watch?v=mvsUjHd0Na4)
 
 ### :pie: Десерты
 
-- [Брауни с вишней](recipes/05-dessert/brownie.md)
+- [Брауни с вишней](recipes/06-dessert/brownie.md)
 
 ### :axe: Крафт
 
 #### :jar: Ферментация
 
-- [Квашеная капуста / Капуста по-гурьевски](recipes/06-craft/fermented-cabbage.md)
+- [Квашеная капуста / Капуста по-гурьевски](recipes/07-craft/fermented-cabbage.md)
 - [Кимчи](https://www.youtube.com/watch?v=mvsUjHd0Na4)
 
 #### :hot_dog: Колбасные изделия
 
-- [Колбаски из индейки](recipes/06-craft/sausage-turkey.md)
+- [Колбаски из индейки](recipes/07-craft/sausage-turkey.md)
 
 ## Дегустации
 
