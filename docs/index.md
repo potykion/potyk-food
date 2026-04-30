@@ -65,6 +65,7 @@
 
 #### :kr: Корейская кухня
 
+- [Корейский чикен в соусе Яннём](recipes/05-asia/korea/korean-chicken.md)
 - [Пульгоги](recipes/05-asia/korea/bulgogi.md)
 - [Кимчи](https://www.youtube.com/watch?v=mvsUjHd0Na4)
 
