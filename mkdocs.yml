@@ -3,10 +3,18 @@ site_name: potyk-food
 site_url: https://potykion.github.io/potyk-food/
 site_dir: site
 
+repo_url: https://github.com/potykion/potyk-food
+edit_uri: edit/master/docs/
+repo_name: potykion/potyk-food
 theme:
   name: material
+  icon:
+    logo: simple/mealie
+    repo: fontawesome/brands/github
   features:
     - navigation.tabs
+    - content.action.edit
+
 markdown_extensions:
   - attr_list
   - md_in_html

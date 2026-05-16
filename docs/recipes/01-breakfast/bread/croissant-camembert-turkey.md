@@ -1,8 +1,8 @@
-# Круассан с индейкой, сыром камамбер и брусничным вареньем
+# Круассан с индейкой, камамбером и брусничным вареньем
 
 https://www.youtube.com/watch?v=Mo41tlTKOw0
 
-## Ингредиенты\
+## Ингредиенты
 
 ![croissant-camembert-turkey.png](../../_img/croissant-camembert-turkey.png)
 
