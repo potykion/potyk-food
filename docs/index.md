@@ -11,6 +11,7 @@
 - [Тост Креветки Саганаки](recipes/01-breakfast/bread/shrimp-saganaki.md)
 - [Круассан с индейкой, сыром камамбер и брусничным вареньем](recipes/01-breakfast/bread/croissant-camembert-turkey.md)
 - [Бутерброд с минтаем и авокадо](recipes/01-breakfast/bread/mintai-avocado-toast.md)
+- [Яйца Бенедикт](recipes/01-breakfast/bread/benedict.md)
 
 #### :egg: Яйца
 
