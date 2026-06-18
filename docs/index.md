@@ -44,6 +44,7 @@
 - [Печень с яблоками по-берлински](recipes/04-main-course/liver-w-apples.md)
 - [Свиные медальоны с яблочно-горчичным соусом](recipes/04-main-course/pork-w-apples.md)
 - [Рагу с говядиной и корнем сельдерея ](recipes/04-main-course/ragout-celery-root.md)
+- [Бигус](recipes/04-main-course/bigus.md)
 
 #### :spaghetti: Паста
 
