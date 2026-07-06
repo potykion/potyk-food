@@ -24,6 +24,7 @@
 
 - [Сырники](recipes/01-breakfast/pancakes/syrniki.md)
 - [Блины](recipes/01-breakfast/pancakes/blyni.md)
+- [Оладьи](recipes/breakfast/pancakes/pancakes.md)
 
 ### :salad: Салаты
 
