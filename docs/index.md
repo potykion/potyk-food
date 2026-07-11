@@ -20,11 +20,12 @@
 - [Глазунья/Омлет запеченая с колбасками/овощами/сыром / Фриратта](recipes/01-breakfast/eggs/eggs-baked-w-sausage-and-veggies.md)
 - [Скрембл с тунцом](recipes/01-breakfast/eggs/tuna-eggs.md)
 
-#### :pancakes: Сырники / Блинбчики
+#### :pancakes: Сырники / Блинбчики и тд
 
 - [Сырники](recipes/01-breakfast/pancakes/syrniki.md)
 - [Блины](recipes/01-breakfast/pancakes/blyni.md)
-- [Оладьи](recipes/breakfast/pancakes/pancakes.md)
+- [Оладьи](recipes/01-breakfast/pancakes/pancakes.md)
+- [Запеканка](recipes/01-breakfast/pancakes/zapekanka.md)
 
 ### :salad: Салаты
 
