@@ -35,6 +35,7 @@
 ### :bowl_with_spoon: Супы
 
 - [Куриный суп](recipes/03-soup/chicken-soup.md)
+- [Борщ](recipes/03-soup/borsh.md)
 
 ### :shallow_pan_of_food: Основные блюда
 
