@@ -49,6 +49,7 @@
 - [Рагу с говядиной и корнем сельдерея ](recipes/04-main-course/ragout-celery-root.md)
 - [Бигус](recipes/04-main-course/bigus.md)
 - [Ёжики](recipes/04-main-course/ezhiki.md)
+- [Лапша с курицей в сливочно-пряном соусе](recipes/04-main-course/creamy-chicken-noodles.md)
 
 #### :spaghetti: Паста
 
