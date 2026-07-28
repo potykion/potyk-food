@@ -2,6 +2,10 @@
 
 - https://github.com/potykion/potyk-food
 
+## Где брать рецепты
+
+- https://www.russianfood.com
+
 ## Запуск 
 
 ### На локалке
