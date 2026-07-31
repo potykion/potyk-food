@@ -11,6 +11,7 @@
 - [Тост Креветки Саганаки](recipes/01-breakfast/bread/shrimp-saganaki.md)
 - [Круассан с индейкой, сыром камамбер и брусничным вареньем](recipes/01-breakfast/bread/croissant-camembert-turkey.md)
 - [Бутерброд с минтаем и авокадо](recipes/01-breakfast/bread/mintai-avocado-toast.md)
+- [Горячий бутер с кетчупом, колбасой и сыром](recipes/01-breakfast/bread/hot-sandwich-ketchup-sausage-cheese.md)
 - [Яйца Бенедикт](recipes/01-breakfast/bread/benedict.md)
 
 #### :egg: Яйца
@@ -51,6 +52,7 @@
 - [Ёжики](recipes/04-main-course/ezhiki.md)
 - [Жаркое из курицы с картошкой](recipes/04-main-course/chicken-w-potato.md)
 - [Бешбармак](recipes/04-main-course/beshbarmak.md)
+- [Гречка с куриным филе](recipes/04-main-course/buckwheat-w-chicken.md)
 
 #### :spaghetti: Паста
 
