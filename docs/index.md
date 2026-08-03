@@ -54,6 +54,7 @@
 - [Бешбармак](recipes/04-main-course/beshbarmak.md)
 - [Гречка с куриным филе](recipes/04-main-course/buckwheat-w-chicken.md)
 - [Рыба, запеченная с помидорами и оливками по-средиземноморски](recipes/04-main-course/fish-w-tomatoes-olives.md)
+- [Ленивые голубцы в духовке](recipes/04-main-course/lazy-golubtsy.md)
 
 #### :spaghetti: Паста
 
